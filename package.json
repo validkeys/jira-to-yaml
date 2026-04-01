@@ -1,0 +1,25 @@
+{
+  "name": "jira-to-yaml",
+  "version": "1.0.0",
+  "description": "Minimal JavaScript package to parse Jira XML tickets and output YAML",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "jira-to-yaml": "./cli.js"
+  },
+  "scripts": {
+    "test": "node example.js"
+  },
+  "keywords": [
+    "jira",
+    "xml",
+    "yaml",
+    "parser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0",
+    "js-yaml": "^4.1.0"
+  }
+}
