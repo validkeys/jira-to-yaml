@@ -8,9 +8,39 @@ Minimal JavaScript package to parse Jira XML tickets and output structured YAML.
 npm install
 ```
 
+### Link for Global Usage
+
+To use `jira-to-yaml` as a global command from anywhere on your system:
+
+```bash
+npm link
+```
+
+Now you can run the command globally:
+
+```bash
+jira-to-yaml /path/to/file.xml
+```
+
+To unlink later:
+
+```bash
+npm unlink -g jira-to-yaml
+```
+
 ## Usage
 
-### As a CLI tool
+### As a global CLI command (after linking)
+
+```bash
+# Automatically creates ticket.yaml from ticket.xml
+jira-to-yaml /path/to/ticket.xml
+
+# Or specify a custom output file
+jira-to-yaml /path/to/ticket.xml /path/to/output.yaml
+```
+
+### As a local CLI tool
 
 ```bash
 # Automatically creates ticket.yaml from ticket.xml
