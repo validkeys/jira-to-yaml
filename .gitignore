@@ -51,3 +51,4 @@ Thumbs.db
 # Build output
 dist/
 build/
+test-output/
